@@ -9,14 +9,14 @@ int n;
 char choice_user, choice_correct;
 
 int
-main()
+main(void)
 {
 	printf("Equation :: ans = 15 / 2 + 3 - (14 * n)\n");
 	printf("Enter n: "); scanf("%d", &n);
 	srand(time(NULL));
 	choice_correct = 0x61 + (rand() % 4);
 	answer = 15 / 2 + 3 - (14 * n);
-	// Need loop to not be zero
+	/* Need loop to not be zero */
 	a = answer + rand() % (ANSWER_RANDOM_RANGE * 2) - ANSWER_RANDOM_RANGE;
 	b = answer + rand() % (ANSWER_RANDOM_RANGE * 2) - ANSWER_RANDOM_RANGE;
 	c = answer + rand() % (ANSWER_RANDOM_RANGE * 2) - ANSWER_RANDOM_RANGE;

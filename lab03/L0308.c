@@ -5,7 +5,7 @@
 double r, area;
 
 int
-main()
+main(void)
 {
 	printf("Enter r: ");
 	scanf("%lf", &r);

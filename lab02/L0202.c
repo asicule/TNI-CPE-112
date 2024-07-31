@@ -8,7 +8,7 @@ double user_input;
 double centimeter, millimeter, meter, inch;
 
 int
-main()
+main(void)
 {
 	printf("Enter length in centemeter: ");
 	scanf("%lf", &user_input);

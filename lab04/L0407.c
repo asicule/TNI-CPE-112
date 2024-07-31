@@ -5,7 +5,7 @@ float score_average;
 char grade_average;
 
 int
-main()
+main(void)
 {
 	printf("Enter s%d score: ", ++i);
 	scanf("%d", &score);

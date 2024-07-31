@@ -5,7 +5,7 @@ int n, x, y, z;
 int buf;
 
 int
-main()
+main(void)
 {
 	printf("Enter n: "); scanf("%d", &n);
 	printf("\n");
