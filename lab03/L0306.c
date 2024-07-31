@@ -6,7 +6,7 @@
 double r, h;
 
 int
-main()
+main(void)
 {
 	printf("Enter r: "); scanf("%lf", &r);
 	printf("Enter h: "); scanf("%lf", &h);

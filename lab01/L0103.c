@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int
-main()
+main(void)
 {
 	printf("Hello!\n\
 My name is Sivapong Nilwong.\n\

@@ -6,7 +6,7 @@
 double x, sum = 0;
 
 int
-main()
+main(void)
 {
 	int i = 0;
 	while (i < ITER_MAX) {

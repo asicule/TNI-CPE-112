@@ -3,12 +3,12 @@
 int x;
 
 int
-main()
+main(void)
 {
+	int i = 1;
 	printf("Enter x: "); scanf("%d", &x);
 	printf("\n");
 
-	int i = 1;
 	x -= 3/2;
 	printf("x after eq%d = %d\n", i++, x);
 	x *= 6;

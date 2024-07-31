@@ -3,7 +3,7 @@
 int n, x, y, z;
 
 int
-main()
+main(void)
 {
 	printf("Enter n: "); scanf("%d", &n);
 	printf("\n");

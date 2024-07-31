@@ -4,7 +4,7 @@ int part_id;
 char *part_name;
 
 int
-main()
+main(void)
 {
 	printf("\
 Avaliable parts list\n\

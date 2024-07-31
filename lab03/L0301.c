@@ -4,7 +4,7 @@ int n1, n2;
 float f1, f2, r1, r2;
 
 int
-main()
+main(void)
 {
 	printf("Enter n1: "); scanf("%d", &n1);
 	printf("Enter n2: "); scanf("%d", &n2);

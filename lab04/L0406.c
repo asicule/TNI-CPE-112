@@ -2,9 +2,10 @@
 
 double width, length, area;
 int family_member_count;
+double area_per_family_member;
 
 int
-main()
+main(void)
 {
 	printf("Bann Sai Thong\n\n");
 	printf("Enter land width: ");
@@ -16,7 +17,7 @@ main()
 	putchar('\n');
 	
 	area = width * length;
-	double area_per_family_member = area / family_member_count;
+	area_per_family_member = area / family_member_count;
 	if (width > 0 && length > 0 && family_member_count > 0)
 		printf("Each member will receive a %.4f sq.m. of land\n", area_per_family_member);
 	else {

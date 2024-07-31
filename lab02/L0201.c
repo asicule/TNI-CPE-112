@@ -4,7 +4,7 @@
 int birth_year;
 
 int
-main()
+main(void)
 {
 	time_t timestamp = time(NULL);
 	struct tm tm = *localtime(&timestamp);
