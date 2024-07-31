@@ -11,30 +11,30 @@ main(void)
 	for (line = 1; line <= factorial; line++) {
 		printf("%hd! = ", line);
 		sum_fact = 1;
-		for (i = line; i > 1; i--) {
+		i = line;
+		while (1) {
 			printf("%hd ", i);
-			fputs("* ", stdout);
 			sum_fact *= i;
+			if (--i) {
+				fputs("* ", stdout);
+			} else break;
 		}
-		printf("%hd ", i);
-		sum_fact *= i;
 		printf("= %ld\n", sum_fact);
 	}
 	putchar('\n');
 
 	fputs("Summation of factorial results\n", stdout);
 	result = 0;
-	for (i = 1; i < factorial; i++) {
+	i = 1;
+	while (1) {
 		sum_fact = 1;
 		for (j = i; j > 0; j--) sum_fact *= j;
 		printf("%ld ", sum_fact);
-		fputs("+ ", stdout);
 		result += sum_fact;
+		if (i++ < factorial) {
+			fputs("+ ", stdout);
+		} else break;
 	}
-	sum_fact = 1;
-	for (j = factorial; j > 0; j--) sum_fact *= j;
-	printf("%ld ", sum_fact);
-	result += sum_fact;
 	printf("= %ld\n", result);
 
 	return 0;
