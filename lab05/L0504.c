@@ -14,8 +14,10 @@ main(void)
 		scanf("%lf", &length);
 		fputs("Enter number of areas (n): ", stdout);
 		scanf("%d", &sections);
-		if (width > 0 && length > 0 && sections > 0) break;
-		else puts("Error input");
+		if (width > 0 && length > 0 && sections > 0)
+			break;
+		else
+			puts("Error input");
 		putchar('\n');
 	}
 	putchar('\n');

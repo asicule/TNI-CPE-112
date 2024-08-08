@@ -17,7 +17,8 @@ main(void)
 			sum_fact *= i;
 			if (--i) {
 				fputs("* ", stdout);
-			} else break;
+			} else
+				break;
 		}
 		printf("= %ld\n", sum_fact);
 	}
@@ -28,12 +29,14 @@ main(void)
 	i = 1;
 	while (1) {
 		sum_fact = 1;
-		for (j = i; j > 0; j--) sum_fact *= j;
+		for (j = i; j > 0; j--)
+			sum_fact *= j;
 		printf("%ld ", sum_fact);
 		result += sum_fact;
 		if (i++ < factorial) {
 			fputs("+ ", stdout);
-		} else break;
+		} else
+			break;
 	}
 	printf("= %ld\n", result);
 

@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 #define PI 3.1416
 double r, area;
@@ -13,9 +13,7 @@ main(void)
 	area = PI * pow(r, 2);
 	printf("\n");
 	printf("Circle area = %.2lf\n", area);
-	printf("Big circle %d\n", (int) area / 100);
+	printf("Big circle %d\n", (int)area / 100);
 
 	return 0;
 }
-
-

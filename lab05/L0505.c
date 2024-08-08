@@ -1,6 +1,6 @@
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 short score, score_lowest = SHRT_MAX, score_highest = 0;
 unsigned long score_highest_index, score_lowest_index;
@@ -33,9 +33,12 @@ main(void)
 		score_sum += score;
 	}
 	putchar('\n');
-	printf("Average score :: %.2f\n", (double) score_sum / (double) student_num);
-	printf("Highest score :: %hd, by student %lu\n", score_highest, score_highest_index);
-	printf("Lowest score  :: %hd, by student %lu\n", score_lowest, score_lowest_index);
+	printf("Average score :: %.2f\n",
+	       (double)score_sum / (double)student_num);
+	printf("Highest score :: %hd, by student %lu\n", score_highest,
+	       score_highest_index);
+	printf("Lowest score  :: %hd, by student %lu\n", score_lowest,
+	       score_lowest_index);
 
 	return 0;
 }

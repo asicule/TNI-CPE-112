@@ -16,6 +16,8 @@ main(void)
 	millimeter = centimeter * MILLI_RATE;
 	meter = centimeter / METER_RATE;
 	inch = centimeter / INCH_RATE;
-	printf("%.2lf centimeters = %.2lf millimeter, %.2lf meters, and %.2lf inches\n", centimeter, millimeter, meter, inch);
+	printf("%.2lf centimeters = %.2lf millimeter, %.2lf meters, and %.2lf "
+	       "inches\n",
+	       centimeter, millimeter, meter, inch);
 	return 0;
 }

@@ -1,10 +1,10 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 #define PI 3.1416
 
-double circleArea(double radius) { return PI * pow(radius, 2); }
-double cylinVol(double radius, double height) { return circleArea(radius) * height; }
+double circleArea(double radius);
+double cylinVol(double radius, double height);
 
 int
 main(void)
@@ -23,4 +23,16 @@ main(void)
 	printf("Cylinder volume %.2f\n", cylinVol(radius, height));
 
 	return 0;
+}
+
+double
+circleArea(double radius)
+{
+	return PI * pow(radius, 2);
+}
+
+double
+cylinVol(double radius, double height)
+{
+	return circleArea(radius) * height;
 }
