@@ -1,6 +1,6 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 int
 main(void)
@@ -11,7 +11,7 @@ main(void)
 	scanf("%lf", &y);
 
 	x1 = sqrt(pow(y, 2) + 45);
-	x2 = pow(y, 2) + 3*y + 1;
+	x2 = pow(y, 2) + 3 * y + 1;
 
 	puts("\nResults");
 	printf("x from eq.1 = %.2f\n", x1);

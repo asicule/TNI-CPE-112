@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 #define PI 3.1416
 
@@ -8,8 +8,10 @@ double r, h;
 int
 main(void)
 {
-	printf("Enter r: "); scanf("%lf", &r);
-	printf("Enter h: "); scanf("%lf", &h);
+	printf("Enter r: ");
+	scanf("%lf", &r);
+	printf("Enter h: ");
+	scanf("%lf", &h);
 
 	printf("\n");
 	printf("Circle area = %.2lf\n", PI * pow(r, 2));

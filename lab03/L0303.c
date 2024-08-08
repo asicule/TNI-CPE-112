@@ -5,7 +5,8 @@ int n, x, y, z;
 int
 main(void)
 {
-	printf("Enter n: "); scanf("%d", &n);
+	printf("Enter n: ");
+	scanf("%d", &n);
 	printf("\n");
 
 	x = 3 + 4 * n / 2 - 18;
@@ -29,7 +30,7 @@ main(void)
 	 * 2. 15 / 2 + 3
 	 * 3. 15 / 2 + 3 - (14 * n)
 	 */
-	
+
 	printf("Result x = %d\n", x);
 	printf("Result y = %d\n", y);
 	printf("Result z = %d\n", z);
