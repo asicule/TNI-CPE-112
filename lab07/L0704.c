@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 char goods[] = {'E', 'R', 'T', 'Y', 'U'};
-double goods_price[] = { 99.00, 199.00, 149.00, 639.00, 1099.00 };
+double goods_price[] = {99.00, 199.00, 149.00, 639.00, 1099.00};
 
 size_t goods_len = sizeof(goods);
 
-int goods_amount[sizeof(goods)] = { 0 };
+int goods_amount[sizeof(goods)] = {0};
 
 int
 main(void)
@@ -28,7 +28,7 @@ main(void)
 			puts("Error number");
 			continue;
 		}
-input_amount:
+	input_amount:
 		fputs("Amount: ", stdout);
 		scanf("%d", &good_amount);
 		if (good_amount < 0) {
@@ -49,8 +49,7 @@ input_amount:
 	for (i = 0; i < goods_len; ++i) {
 		good_price_sum = goods_price[i] * goods_amount[i];
 		printf("%d. %c ::: %d ::: %.2f\n", i + 1, goods[i],
-		       goods_amount[i],
-		       good_price_sum);
+		       goods_amount[i], good_price_sum);
 		price_sum += good_price_sum;
 	}
 
