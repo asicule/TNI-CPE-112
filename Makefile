@@ -4,3 +4,5 @@ clean:
 	rm out/*
 out/L$(LAB)$(ITEM).out: lab$(LAB)/L$(LAB)$(ITEM).c
 	clang -ansi -pedantic -pedantic-errors -o out/L$(LAB)$(ITEM).out lab$(LAB)/L$(LAB)$(ITEM).c
+format:
+	clang-format -i lab*/*.c --verbose
