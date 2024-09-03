@@ -1,8 +1,20 @@
-run: out/L$(LAB)$(ITEM).out
-	./out/L$(LAB)$(ITEM).out
+OUTDIR ?= out
+TARGET ?= $(OUTDIR)/L$(LAB)$(ITEM)
+SRCS ?= lab$(LAB)/L$(LAB)$(ITEM).c
+
+CC := clang
+
+CFLAGS := -ansi -pedantic -pedantic-errors
+
+.PHONY = run clean format
+
+run: $(TARGET)
+	$^
 clean:
-	rm out/*
-out/L$(LAB)$(ITEM).out: lab$(LAB)/L$(LAB)$(ITEM).c
-	clang -ansi -pedantic -pedantic-errors -o out/L$(LAB)$(ITEM).out lab$(LAB)/L$(LAB)$(ITEM).c
+	$(RM) -r $(OUTDIR)
+$(TARGET): $(SRCS) $(OUTDIR)
+	$(CC) -o $@ $(SRCS)
+$(OUTDIR):
+	@mkdir -p $(OUTDIR)
 format:
-	clang-format -i lab*/*.c --verbose
+	clang-format --verbose -i lab*/*.c
