@@ -48,8 +48,8 @@ print_board(unsigned int *players_pos, ssize_t players_pos_len,
 	int is_hole;
 	fputs("Board :: ", stdout);
 	while (1) {
-		is_player = exists_in_unsigned_integer_array(i, players_pos,
-		                                             players_pos_len);
+		is_player =
+		    exists_in_unsigned_integer_array(i, players_pos, players_pos_len);
 		is_hole = exists_in_unsigned_integer_array(i, holes, holes_len);
 		if (is_player)
 			putchar('(');

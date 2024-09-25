@@ -9,8 +9,7 @@ main(void)
 {
 	int i;
 	for (i = 0; i < product_arr_len; i++)
-		printf("product %d       price   %.2f\n", i + 1,
-		       product_arr[i]);
+		printf("product %d       price   %.2f\n", i + 1, product_arr[i]);
 
 	return 0;
 }

@@ -50,15 +50,13 @@ fire_cannon(unsigned int cannon_num, unsigned int ammo_count,
 	while (1) {
 		time_delta = 0;
 		clock_start = clock();
-		printf("\nFiring cannon %d %d/%d\n", cannon_num,
-		       ++round_current, ammo_count);
+		printf("\nFiring cannon %d %d/%d\n", cannon_num, ++round_current,
+		       ammo_count);
 		if (round_current < ammo_count)
 			while (1) {
 				delay(print_wait_interval_ms);
-				time_delta =
-				    (clock() - clock_start) / CLOCKS_PER_MS;
-				printf(print_wait_interval_format_specifier,
-				       time_delta / 1000);
+				time_delta = (clock() - clock_start) / CLOCKS_PER_MS;
+				printf(print_wait_interval_format_specifier, time_delta / 1000);
 				if (time_delta >= delay_ms)
 					break;
 			}

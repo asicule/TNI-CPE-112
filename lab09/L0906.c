@@ -29,8 +29,7 @@ get_user_id(char username[USERNAME_LENGTH_MAX], credential_t credentials[],
             ssize_t credentials_len)
 {
 	for (i = 0; i < credentials_len; ++i) {
-		if (strncmp(username, credentials[i][0], USERNAME_LENGTH_MAX) ==
-		    0)
+		if (strncmp(username, credentials[i][0], USERNAME_LENGTH_MAX) == 0)
 			return i;
 	}
 	return -1;
@@ -71,8 +70,7 @@ change_password_by_username(char username[USERNAME_LENGTH_MAX],
 	int userid = get_user_id(username, credentials, credentials_len);
 	if (userid < 0)
 		return -1;
-	if (strncpy(credentials[userid][1], password, PASSWORD_LENGTH_MAX) !=
-	    0) {
+	if (strncpy(credentials[userid][1], password, PASSWORD_LENGTH_MAX) != 0) {
 		puts("Error change password");
 		return -1;
 	}
@@ -94,8 +92,7 @@ program_start:
 
 	putchar('\n');
 
-	switch (
-	    authorize_user(username, password, credentials, credentials_len)) {
+	switch (authorize_user(username, password, credentials, credentials_len)) {
 	case -1:
 		puts("Error Username or Password");
 		break;

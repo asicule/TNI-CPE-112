@@ -33,8 +33,7 @@ main(void)
 		score_sum += score;
 	}
 	putchar('\n');
-	printf("Average score :: %.2f\n",
-	       (double)score_sum / (double)student_num);
+	printf("Average score :: %.2f\n", (double)score_sum / (double)student_num);
 	printf("Highest score :: %hd, by student %lu\n", score_highest,
 	       score_highest_index);
 	printf("Lowest score  :: %hd, by student %lu\n", score_lowest,

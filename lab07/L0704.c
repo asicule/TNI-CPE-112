@@ -48,8 +48,8 @@ main(void)
 	puts("----------");
 	for (i = 0; i < goods_len; ++i) {
 		good_price_sum = goods_price[i] * goods_amount[i];
-		printf("%d. %c ::: %d ::: %.2f\n", i + 1, goods[i],
-		       goods_amount[i], good_price_sum);
+		printf("%d. %c ::: %d ::: %.2f\n", i + 1, goods[i], goods_amount[i],
+		       good_price_sum);
 		price_sum += good_price_sum;
 	}
 

@@ -30,8 +30,7 @@ main(void)
 	for (i = 0; i < credentials_len; ++i) {
 		if (strncmp(username, credentials[i][0], sizeof(username)) != 0)
 			continue;
-		if (strncmp(password, credentials[i][1], sizeof(password)) !=
-		    0) {
+		if (strncmp(password, credentials[i][1], sizeof(password)) != 0) {
 			puts("Error Username or Password");
 			break;
 		}
